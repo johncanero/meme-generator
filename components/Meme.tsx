@@ -1,4 +1,5 @@
 import React from "react";
+import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames"
 
 const Meme = () => {
   return (
@@ -22,8 +23,8 @@ const Meme = () => {
       </div>
 
       {/* Button */}
-      <button className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet font-bold py-3 text-xl rounded-lg md:px-56 md:mt-6">
-        Get a new meme image
+      <button className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet font-bold py-3   text-lg md:text-xl rounded-lg px-9 mt-6 md:px-56">
+        Get a new meme image <MdFilterFrames className="mt-1 ml-1 align-middle" />
       </button>
     </div>
   );
