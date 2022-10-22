@@ -13,7 +13,10 @@ module.exports = {
     },
     extend: {
       colors: {
-    
+        memeYellow: '#F9ED69',
+        memeOrange: '#F08A5D',
+        memeViolet: '#6A2C70',
+        memeDarkMagenta: '#6A2C70'
       },
     },
     fontFamily: {
