@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="meme-generator-page"/>
         <meta property="og:type" content="dynamic website" />
         <meta property="og:description" content="meme.description" />
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/memeIcon3.png" />
       </Head>
  
 
