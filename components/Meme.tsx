@@ -1,17 +1,32 @@
-import React from 'react'
+import React from "react";
 
 const Meme = () => {
   return (
     <div>
-         <div className='flex justify-center'>
-            <input type="text" id="first_name" className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-80 p-3 mx-3 " placeholder="Input Label" required></input>
+      <div className="flex flex-col items-center md:flex-row md:justify-center mt-12">
+        <input
+          type="text"
+          id="first_name"
+          className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-72 p-3 md:w-80  md:mx-3"
+          placeholder="Input Label"
+          required
+        ></input>
 
-            <input type="text" id="first_name" className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-80 p-3 mx-3" placeholder="Input Label" required></input>
+        <input
+          type="text"
+          id="first_name"
+          className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-72 p-3 mt-5 md:mt-0 md:w-80 md:mx-3"
+          placeholder="Input Label"
+          required
+        ></input>
+      </div>
 
-     
-        </div>
+      {/* Button */}
+      <button className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet font-bold py-3 text-xl rounded-lg md:px-56 md:mt-6">
+        Get a new meme image
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Meme
+export default Meme;
