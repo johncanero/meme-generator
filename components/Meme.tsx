@@ -23,7 +23,7 @@ const Meme = () => {
       </div>
 
       {/* Button */}
-      <button className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 border-gray-300 text-lg md:text-xl rounded-lg px-9 mt-6 md:px-52">
+      <button className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-gray-300 text-lg md:text-xl rounded-lg px-9 mt-6 md:px-52">
         Get a new meme image <MdFilterFrames className="mt-1 ml-1 align-middle" />
       </button>
     </div>
