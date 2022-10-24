@@ -12,16 +12,28 @@ const getMemeImage = () => {
     console.log(url)
 }
 
+// React useState
+const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
+    
+const addItem = () => {
+    const newThingText = `Thing ${things.length + 1}`
+    setThings(prevState => [...prevState, newThingText])
+}
+
+const thingsElements = things.map(thing => <p key={thing}>{thing}</p>)
+
+
+
 // React Map (Show Contents)
-const thingsArray = ["Thing 1", "Thing 2"]
-const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
+    // const thingsArray = ["Thing 1", "Thing 2"]
+    // const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
 
 // React Map (Addition)
-const addItem = () => { 
-    const newThingText = `Thing ${thingsArray.length +1}`
-    thingsArray.push(newThingText)
-    console.log(thingsArray)
-}
+    // const addItem = () => { 
+    //     const newThingText = `Thing ${thingsArray.length +1}`
+    //     thingsArray.push(newThingText)
+    //     console.log(thingsArray)
+    // }
 
   return (
     <div>
