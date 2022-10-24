@@ -3,13 +3,13 @@ import React from "react";
 const Counter = () => {
   const [count, setCount] = React.useState(0);
 
-  function add() {
+  const add = () => {
     setCount(count + 1);
-  }
+  };
 
-  function subtract() {
+  const subtract = () => {
     setCount(count - 1);
-  }
+  };
 
   return (
     <div className="counter flex justify-center mt-12">
