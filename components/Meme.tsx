@@ -15,13 +15,12 @@ const getMemeImage = () => {
 // React useState
 const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
     
-const addItem = () => {
+function addItem() {
     const newThingText = `Thing ${things.length + 1}`
     setThings(prevState => [...prevState, newThingText])
 }
 
 const thingsElements = things.map(thing => <p key={thing}>{thing}</p>)
-
 
 
 // React Map (Show Contents)
