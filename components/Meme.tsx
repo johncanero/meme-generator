@@ -13,26 +13,15 @@ const getMemeImage = () => {
 }
 
 // React useState
-const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
+const [memes, setMemes] = React.useState(["Meme 1", "Meme 2"])
     
 const addItem = () => {
-    const newThingText = `Thing ${things.length + 1}`
-    setThings(prevState => [...prevState, newThingText])
+    const newMemeText = `Meme ${memes.length + 1}`
+    setMemes(prevState => [...prevState, newMemeText])
 }
 
-const thingsElements = things.map(thing => <p key={thing}>{thing}</p>)
+const memeElements = memes.map(meme => <p key={meme}>{meme}</p>)
 
-
-// React Map (Show Contents)
-    // const thingsArray = ["Thing 1", "Thing 2"]
-    // const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
-
-// React Map (Addition)
-    // const addItem = () => { 
-    //     const newThingText = `Thing ${thingsArray.length +1}`
-    //     thingsArray.push(newThingText)
-    //     console.log(thingsArray)
-    // }
 
   return (
     <div>
@@ -61,7 +50,7 @@ const thingsElements = things.map(thing => <p key={thing}>{thing}</p>)
         <MdFilterFrames className="mt-1 ml-1 align-middle" />
       </button>
 
-      {thingsElements}
+      {memeElements}
     </div>
   );
 };
