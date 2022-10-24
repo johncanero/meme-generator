@@ -12,7 +12,7 @@ const Header = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://memes.com/"
+                href="#"
                 aria-current="page"
               >
                 <div className="mr-3 mt-1">
