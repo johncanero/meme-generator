@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Meme from '../components/Meme'
 import State from '../components/State'
+import Counter from '../components/Counter'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         <Header />
         <Meme />
         <State />
+        <Counter />
       </main>
 
 
