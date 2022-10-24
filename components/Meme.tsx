@@ -1,16 +1,7 @@
 import React from "react";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
-import memesData from "../pages/memesData";
 
 const Meme = () => {
-
-// Meme Data URL
-const getMemeImage = () => {
-    const memesArray = memesData.data.memes
-    const randomNumber = Math.floor(Math.random() * memesArray.length)
-    const url = memesArray[randomNumber].url
-    console.log(url)
-}
 
 // React useState
 const [memes, setMemes] = React.useState(["Meme 1", "Meme 2"])
