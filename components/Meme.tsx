@@ -41,7 +41,7 @@ const Meme = () => {
         <MdFilterFrames className="mt-1 ml-1 align-middle" />
       </button>
 
-      <div className="text-center">{memeElements}</div>
+      <div className="text-center mt-12">{memeElements}</div>
     </div>
   );
 };

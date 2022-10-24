@@ -8,7 +8,7 @@ const State = () => {
   }
 
   return (
-    <div className="state text-center">
+    <div className="state text-center mt-12">
       <h1 className="state--title">Is state important to know?</h1>
       <div className="state--value" onClick={handleClick}>
         <h1>{isImportant}</h1>
