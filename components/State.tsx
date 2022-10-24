@@ -1,7 +1,7 @@
 import React from 'react'
 
 const State = () => {
-    const result = React.useState("Yes")
+    const [result, func] = React.useState("Yes")
     console.log(result)
 
     return (
