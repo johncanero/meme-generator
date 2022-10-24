@@ -15,7 +15,7 @@ const getMemeImage = () => {
 // React useState
 const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
     
-function addItem() {
+const addItem = () => {
     const newThingText = `Thing ${things.length + 1}`
     setThings(prevState => [...prevState, newThingText])
 }
