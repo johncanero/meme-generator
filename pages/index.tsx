@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Meme from '../components/Meme'
-import State from '../components/State'
-import Counter from '../components/Counter'
+// import State from '../components/State'
+// import Counter from '../components/Counter'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -26,8 +26,8 @@ const Home: NextPage = () => {
       <main>
         <Header />
         <Meme />
-        <State />
-        <Counter />
+        {/* <State /> */}
+        {/* <Counter /> */}
       </main>
 
 
