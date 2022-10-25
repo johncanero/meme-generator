@@ -6,6 +6,7 @@ import memesData from "../memesData";
 
 const Meme = () => {
   // React useState
+
   // const [memes, setMemes] = React.useState(["Meme 1", "Meme 2"]);
 
   // const addItem = () => {
@@ -24,6 +25,7 @@ const Meme = () => {
   };
 
   // Counter - useState
+  
   // const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"]);
 
   // const addItem = () => {
