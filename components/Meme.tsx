@@ -30,7 +30,7 @@ const Meme = () => {
           type="text"
           id="first_name"
           className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-72 p-3 md:w-80  md:mx-3"
-          placeholder="Input Label"
+          placeholder="Input Meme Text"
           required
         ></input>
 
@@ -38,7 +38,7 @@ const Meme = () => {
           type="text"
           id="first_name"
           className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-72 p-3 mt-5 md:mt-0 md:w-80 md:mx-3"
-          placeholder="Input Label"
+          placeholder="Input Meme Text"
           required
         ></input>
       </div>
