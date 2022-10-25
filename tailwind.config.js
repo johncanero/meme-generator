@@ -18,9 +18,12 @@ module.exports = {
         memeViolet: '#6A2C70',
         memeDarkMagenta: '#6A2C70'
       },
-    },
-    height: {
-      '128': '32rem',
+      height: {
+        '128': '30rem',
+      },
+      width: {
+        '128': '48rem',
+      },
     },
     fontFamily: {
       Poppins: ['Poppins', 'sans-serif'],
