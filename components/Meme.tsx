@@ -15,16 +15,13 @@ const Meme = () => {
 
   // const memeElements = memes.map((meme) => <p key={meme}>{meme}</p>);
 
-  const [memeImage, setMemeImage] = React.useState("")
- 
-  
-  function getMemeImage() {
-      const memesArray = memesData.data.memes
-      const randomNumber = Math.floor(Math.random() * memesArray.length)
-      setMemeImage(memesArray[randomNumber].url)
-  }
+  const [memeImage, setMemeImage] = React.useState("");
 
- 
+  const getMemeImage = () => {
+    const memesArray = memesData.data.memes;
+    const randomNumber = Math.floor(Math.random() * memesArray.length);
+    setMemeImage(memesArray[randomNumber].url);
+  };
 
   return (
     <div>
@@ -48,17 +45,17 @@ const Meme = () => {
 
       {/* Button */}
       <button
-        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-gray-300 text-lg md:text-xl rounded-lg px-9 mt-6 md:px-52" onClick={getMemeImage}
+        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-gray-300 text-lg md:text-xl rounded-lg px-9 mt-6 md:px-52"
+        onClick={getMemeImage}
       >
         Get a new meme image{" "}
         <MdFilterFrames className="mt-1 ml-1 align-middle" />
       </button>
 
       {/* <div className="text-center mt-12">{memeElements}</div> */}
-      <Image 
-      width={100}
-      height={100}
-      src={memeImage} />
+      <div className="flex justify-center mx-auto mt-6 sm:w-72 lg:h-128">
+        <Image width={650} height={600} src={memeImage} />
+      </div>
     </div>
   );
 };

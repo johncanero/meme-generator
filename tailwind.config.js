@@ -19,6 +19,9 @@ module.exports = {
         memeDarkMagenta: '#6A2C70'
       },
     },
+    height: {
+      '128': '32rem',
+    },
     fontFamily: {
       Poppins: ['Poppins', 'sans-serif'],
     },
