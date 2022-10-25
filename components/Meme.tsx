@@ -53,7 +53,7 @@ const Meme = () => {
       </button>
 
       {/* <div className="text-center mt-12">{memeElements}</div> */}
-      <div className="flex justify-center mx-auto mt-6 sm:w-72 md:w-128 lg:h-128">
+      <div className="flex justify-center mx-auto mt-6 border-double border-4 border-memeViolet sm:w-72 md:w-128 lg:h-128">
         <Image width={650} height={600} src={memeImage} />
       </div>
     </div>

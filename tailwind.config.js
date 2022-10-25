@@ -22,7 +22,7 @@ module.exports = {
         '128': '30rem',
       },
       width: {
-        '128': '48rem',
+        '128': '40rem',
       },
     },
     fontFamily: {
