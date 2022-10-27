@@ -6,7 +6,6 @@ import memesData from "../memesData";
 
 const Meme = () => {
   // React useState
-
   // const [memes, setMemes] = React.useState(["Meme 1", "Meme 2"]);
 
   // const addItem = () => {
@@ -16,16 +15,28 @@ const Meme = () => {
 
   // const memeElements = memes.map((meme) => <p key={meme}>{meme}</p>);
 
-  const [memeImage, setMemeImage] = React.useState("");
+  // Refactor State
+  // const [memeImage, setMemeImage] = React.useState("");
 
-  const getMemeImage = () => {
-    const memesArray = memesData.data.memes;
+  const [meme, setMeme] = React.useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "http://i.imgflip.com/1bij.jpg",
+  });
+
+  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+
+  function getMemeImage() {
+    const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    setMemeImage(memesArray[randomNumber].url);
-  };
+    const url = memesArray[randomNumber].url;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImage: url,
+    }));
+  }
 
   // Counter - useState
-
   // const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"]);
 
   // const addItem = () => {
@@ -43,7 +54,7 @@ const Meme = () => {
           type="text"
           id="first_name"
           className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-80 p-3 md:w-64 md:mx-3"
-          placeholder="Input Meme Text"
+          placeholder="Top Text"
           required
         ></input>
 
@@ -51,12 +62,12 @@ const Meme = () => {
           type="text"
           id="first_name"
           className="bg-gray-50 border-2 border-gray-200 text-memeDarkMagenta text-sm font-medium rounded-md focus:ring-memeDarkMagenta focus:border-memeDarkMagenta block w-80 p-3 mt-5 md:mt-0 md:w-64 md:mx-3"
-          placeholder="Input Meme Text"
+          placeholder="Bottom Text"
           required
         ></input>
       </div>
 
-      {/* Button */}
+
       <button
         className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-gray-300 text-lg md:text-xl rounded-lg px-12 mt-6 md:px-36"
         onClick={getMemeImage}
@@ -67,7 +78,7 @@ const Meme = () => {
 
       {/* <div className="text-center mt-12">{memeElements}</div> */}
       <div className="flex justify-center mx-auto mt-6 border-4 border-gray-200 sm:w-80 md:w-128 lg:h-128">
-        <Image width={650} height={600} src={memeImage} />
+        <Image width={650} height={600} src={meme.randomImage} />
       </div>
     </div>
   );
