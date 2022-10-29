@@ -4,7 +4,7 @@ import MemeIcon3 from "../public/images/memeIcon3.png";
 
 const Header = () => {
   return (
-    <div className="bg-gradient-to-r from-memeYellow to-memeOrange font-Poppins">
+    <div className="bg-gradient-to-r from-memeYellow to-memeOrange font-Poppins shadow-lg">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
