@@ -9,7 +9,7 @@ const Meme = () => {
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    randomImage: "http://i.imgflip.com/1bij.jpg",
+    randomImage: "https://i.imgflip.com/39t1o.jpg",
   });
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
@@ -54,7 +54,7 @@ const Meme = () => {
       </div>
 
       <button
-        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-memeYellow text-lg md:text-xl rounded-lg px-12 mt-6 md:px-36"
+        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border cursor-pointer border-gray-200 text-lg md:text-xl rounded-lg px-12 mt-6 md:px-36"
         onClick={getMemeImage}
       >
         Get a new meme image{" "}
@@ -64,8 +64,8 @@ const Meme = () => {
       {/* Image */}
       <div className="flex justify-center mx-auto mt-6 relative md:mt-9 md:mb-28 sm:w-80 md:w-128 lg:h-120">
         <Image width={600} height={500} src={meme.randomImage} />
-        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-3xl meme--text text-white top-0 md:text-4xl md:p-6 ">{meme.topText}</h2>
-        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-3xl meme--text text-white bottom-0 md:text-4xl md:p-6 ">{meme.bottomText}</h2>
+        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-2xl meme--text text-white top-0 md:text-4xl md:p-6 ">{meme.topText}</h2>
+        <h2 className="absolute flex justify-center items-center mx-auto p-4 font-Anton uppercase text-2xl meme--text text-white bottom-0 md:text-4xl md:p-6 ">{meme.bottomText}</h2>
       </div>
     </div>
   );
