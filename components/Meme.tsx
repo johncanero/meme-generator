@@ -69,7 +69,7 @@ const Meme = () => {
 
 
       <button
-        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-gray-300 text-lg md:text-xl rounded-lg px-12 mt-6 md:px-36"
+        className="flex mx-auto  bg-gradient-to-r from-memeYellow to-memeOrange text-memeViolet hover:from-memeOrange hover:to-memeYellow active:bg-violet-700 font-bold py-3 border-2 cursor-pointer border-memeYellow text-lg md:text-xl rounded-lg px-12 mt-6 md:px-36"
         onClick={getMemeImage}
       >
         Get a new meme image{" "}
