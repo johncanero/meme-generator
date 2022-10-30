@@ -11,6 +11,7 @@ const Meme = () => {
     bottomText: "",
     randomImage: "https://i.imgflip.com/39t1o.jpg",
   });
+  
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
   const getMemeImage = () => {
