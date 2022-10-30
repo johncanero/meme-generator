@@ -77,8 +77,8 @@ const Meme = () => {
       </button>
 
       {/* <div className="text-center mt-12">{memeElements}</div> */}
-      <div className="flex justify-center mx-auto mt-6 sm:w-80 md:w-128 lg:h-128">
-        <Image width={650} height={600} src={meme.randomImage} />
+      <div className="flex justify-center mx-auto mt-6 md:mt-9 md:mb-28 sm:w-80 md:w-128 lg:h-120">
+        <Image width={600} height={500} src={meme.randomImage} />
       </div>
     </div>
   );

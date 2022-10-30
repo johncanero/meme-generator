@@ -19,9 +19,11 @@ module.exports = {
         memeDarkMagenta: '#6A2C70'
       },
       height: {
+        '120': '28em',
         '128': '30rem',
       },
       width: {
+        '120': '28em',
         '128': '33rem',
       },
     },
