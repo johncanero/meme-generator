@@ -64,8 +64,8 @@ const Meme = () => {
       {/* Image */}
       <div className="flex justify-center mx-auto mt-6 relative md:mt-9 md:mb-28 sm:w-80 md:w-128 lg:h-120">
         <Image width={600} height={500} className='rounded-3xl' src={meme.randomImage} />
-        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-2xl meme--text text-white top-0 md:text-4xl md:p-5 ">{meme.topText}</h2>
-        <h2 className="absolute flex justify-center items-center mx-auto p-4 font-Anton uppercase text-2xl meme--text text-white bottom-0 md:text-4xl md:p-5 ">{meme.bottomText}</h2>
+        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-2xl meme--text text-white top-0 md:text-4xl md:p-6 ">{meme.topText}</h2>
+        <h2 className="absolute flex justify-center items-center mx-auto p-4 font-Anton uppercase text-2xl meme--text text-white bottom-0 md:text-4xl md:p-6 ">{meme.bottomText}</h2>
       </div>
     </div>
   );
