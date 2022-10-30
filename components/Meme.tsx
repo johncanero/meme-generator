@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
 import memesData from "../memesData";
 
+
 const Meme = () => {
   const [meme, setMeme] = React.useState({
     topText: "",
