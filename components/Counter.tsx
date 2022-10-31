@@ -1,39 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
 
 const Counter = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
 
-  // const add = () => {
-  //   setCount(count + 1);
-  // };
-
-  // const subtract = () => {
-  //   setCount(count - 1);
-  // };
-
-  const add = () => {
-    setCount(prevCount => prevCount + 1);
-  };
-
-  const subtract = () => {
-    setCount(prevCount => prevCount - 1);
-  };
-
-
-
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
   return (
-    <div className="counter flex justify-center mt-12">
-      <button className="counter--minus mx-6" onClick={subtract}>
-        –
-      </button>
-      <div className="counter--count">
-        <h1>{count}</h1>
-      </div>
-      <button className="counter--plus mx-6" onClick={add}>
-        +
+<div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter
