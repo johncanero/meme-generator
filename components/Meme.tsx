@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useState } from 'react';
 import Image from "next/image";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
 import memesData from "../memesData";
 
 
 const Meme = () => {
-  const [meme, setMeme] = React.useState({
+  const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
     randomImage: "https://i.imgflip.com/39t1o.jpg",
