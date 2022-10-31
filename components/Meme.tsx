@@ -5,14 +5,17 @@ import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
 import memesData from "../memesData";
 
 const Meme = () => {
+  // useState Hook
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
     randomImage: "https://i.imgflip.com/39t1o.jpg",
   });
 
-  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+ // useState Hook
+  const [allMemeImages, setAllMemeImages] = useState(memesData);
 
+  // Function Button = memesData
   const getMemeImage = () => {
     const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
@@ -23,6 +26,7 @@ const Meme = () => {
     }));
   };
 
+  // handleChange (Forms)
   const handleChange = (event: { target: { name: any; value: any } }) => {
     const { name, value } = event.target;
     setMeme((prevMeme) => ({
