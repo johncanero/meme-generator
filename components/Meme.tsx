@@ -82,10 +82,10 @@ const Meme = () => {
           className="rounded-3xl"
           src={meme.randomImage}
         />
-        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-2xl meme--text text-white top-0 md:text-4xl md:p-6 ">
+        <h2 className="absolute flex justify-center p-4 font-Anton uppercase text-2xl meme--text text-white top-0 md:text-5xl md:p-7 ">
           {meme.topText}
         </h2>
-        <h2 className="absolute flex justify-center items-center mx-auto p-4 font-Anton uppercase text-2xl meme--text text-white bottom-0 md:text-4xl md:p-6 ">
+        <h2 className="absolute flex justify-center items-center mx-auto p-4 font-Anton uppercase text-2xl meme--text text-white bottom-0 md:text-5xl md:p-7">
           {meme.bottomText}
         </h2>
       </div>
