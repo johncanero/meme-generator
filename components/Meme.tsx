@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
-import memesData from "../memesData";
 
 const Meme = () => {
   // useState Hook
@@ -12,14 +11,23 @@ const Meme = () => {
     randomImage: "https://i.imgflip.com/3i7p.jpg",
   });
 
- // useState Hook
-  const [allMemeImages, setAllMemeImages] = useState(memesData);
+  // useState Hook
+  const [allMemes, setAllMemes] = useState([]);
+
+  
+  // useEffect Hook
+  React.useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) => res.json())
+      .then((data) => setAllMemes(data.data.memes));
+  }, []);
+  
+  console.log(allMemes)
 
   // Function Button = memesData
   const getMemeImage = () => {
-    const memesArray = allMemeImages.data.memes;
-    const randomNumber = Math.floor(Math.random() * memesArray.length);
-    const url = memesArray[randomNumber].url;
+    const randomNumber = Math.floor(Math.random() * allMemes.length);
+    const url = allMemes[randomNumber].url;
     setMeme((prevMeme) => ({
       ...prevMeme,
       randomImage: url,
@@ -34,7 +42,6 @@ const Meme = () => {
       [name]: value,
     }));
   };
-
 
   return (
     <div>
