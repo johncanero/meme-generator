@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
 
@@ -12,11 +12,11 @@ const Meme = () => {
   });
 
   // useState Hook
-  const [allMemes, setAllMemes] = useState([]);
+  const [allMemes, setAllMemes] = useState([] as any[]);
 
   
   // useEffect Hook
-  useEffect(() => {
+  React.useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
       .then((res) => res.json())
       .then((data) => setAllMemes(data.data.memes));
@@ -26,6 +26,7 @@ const Meme = () => {
 
   // Function Button = memesData
   const getMemeImage = () => {
+
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url;
     setMeme((prevMeme) => ({
