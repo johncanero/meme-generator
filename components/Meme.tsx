@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdFilterFrames } from "@react-icons/all-files/md/MdFilterFrames";
 
@@ -16,7 +16,7 @@ const Meme = () => {
 
   
   // useEffect Hook
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
       .then((res) => res.json())
       .then((data) => setAllMemes(data.data.memes));
