@@ -8,7 +8,7 @@ const Meme = () => {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    randomImage: "https://i.imgflip.com/3i7p.jpg",
+    randomImage: "https://i.imgflip.com/9ehk.jpg",
   });
 
   // useState Hook
